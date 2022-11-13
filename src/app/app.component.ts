@@ -11,7 +11,7 @@ import { CurrencyApi } from './api/api';
 export class AppComponent implements OnInit {
   title = 'currency';
   currencies: ICurrency[] = [];
-
+  date = Date();
   constructor(private allCurrency: CurrencyApi) {}
 
   ngOnInit(): void {

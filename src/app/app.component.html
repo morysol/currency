@@ -1,7 +1,9 @@
-<div class="max-w-2xl container mx-auto pt-10 text-center">
-  <!-- <app-header [currencies]="currencies[0]"></app-header> -->
-  <p>currency now is:</p>
-  <div class="py-4 px-2 border rounded flex flex-row justify-center gap-5 mb-2">
+<div class="max-w-2xl container mx-auto pt-10 text-center px-4 py-10">
+  <p class="text-gray-200 bg-cyan-700 py-10">{{ date }}</p>
+  <p class="py-4">Today your can exchange:</p>
+  <div
+    class="py-10 px-2 border rounded flex flex-row justify-center gap-5 mb-2"
+  >
     <app-header
       *ngFor="let currency of currencies"
       [currencies]="currency"
